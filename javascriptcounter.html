@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascriptcounter</title>
+</head>
+<body>
+<div id="first"></div>
+<script>
+	var tf = 60;
+	var e = document.getElementById("first");
+	var t = setInterval(demo,1000);
+	functionfirst(){
+		if (tf == -1){
+			clearTimeout(t);
+			second();
+		} else{ e.innerHTML = tf + 'Time seconnds for remaining';
+		 tf--;
+	}
+	}
+	functionsecond(){
+		alert("Hi welcome user");
+	}
+</script>
+</body>
+</html>
